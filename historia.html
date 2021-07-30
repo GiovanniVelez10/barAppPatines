@@ -1,0 +1,255 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sobre Ruedas VIP</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+     <!----details-product-slider--->
+				<!-- Include the Etalage files -->
+					<link rel="stylesheet" href="css/etalage.css">
+					<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>
+				<!----//details-product-slider--->	
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="img/sobreRuedas.jpeg" alt="" width="120" height="95"/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="img/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	
+						    	<li><a href="PatinesSemi.html">patines semiprofesionales</a></li>
+						    	<li><a href="accesorios.html">accesorios</a></li>							
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="img/edit.png" alt=""/></a>
+						  		<a href="#"><img src="img/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 single_left">
+				   <div class="single_image">
+					     <ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="img/hist4.jpg" />
+									<img class="etalage_source_image" src="img/hist4.jpg" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="img/hist2.jpg" />
+								<img class="etalage_source_image" src="img/hist2.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="img/hist5.jpg" />
+								<img class="etalage_source_image" src="img/hist5.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="img/hist3.jpg" />
+								<img class="etalage_source_image" src="img/hist3.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="img/pat22.jpeg" />
+								<img class="etalage_source_image" src="img/pat22.jpeg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="img/pat27.jpeg" />
+								<img class="etalage_source_image" src="img/pat27.jpeg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="img/pat31.jpeg" />
+								<img class="etalage_source_image" src="img/pat31.jpeg" />
+							</li>
+						</ul>
+					    </div>
+				        <!-- end product_slider -->
+				        
+				        <div class="clear"> </div>
+				</div>
+				
+			</div>		
+			<div class="desc">
+			   	<h4>Historia del patinaje</h4>
+			   	<p>El origen del patinaje se remonta al siglo XVIII, cuando un belga llamado Joseph Merlín (a la derecha, pintado por Thomas Gainsborough) presentó lo que se consideran los primeros patines de la historia en Londres, en 1770.
+			   	Aunque entre medias hubo varios modelos o prototipos de patines, el francés, M. Petitbled, en 1819, fue el primero en patentar un artilugio con ruedas de metal, madera o marfil, montadas bajo una base de madera, que se sujetaba al pie con correas.
+Las ruedas de los primeros patines eran tan fijas que no permitían tomar curvas, pero el invento empezó a tener cierto éxito y los inventores de la época sacaron varios modelos cada vez más manejables. El crédito oficial por la invención del primer par de patines es para el Belga Joseph Merlín quien en 1770 estuvo en Londres como director del Museo Cox en Spring gardens, en donde exhibió varios de sus instrumentos musicales. Merlín contaba con una exhibición en su casa en donde los visitantes podían observar su único invento (un par de patines sobre ruedas).
+La historia nos habla de otros inventores de ruedas pero es en 1813 cuando Jean Garcín, construyó unas ruedas de madera que patentaría dos años después con notable éxito. Creó una Escuela de
+Patinaje, pero la práctica de los aprendices provocó numerosos accidentes que motivaron el cierre de la Escuela y de sus actividades.
+Años más tarde, en 1867, el invento de Jean Garcin fue recogido por unos industriales británicos que, previamente perfeccionado, lo presentaron y expusieron en la Feria Mundial de París. Este proyecto fue patentado en Nueva York por James Leonard Plinton, con el acoplamiento de un mecanismo de frenado consistente en un taco de caucho en la parte delantera.
+Luego de este fiasco, no volvió a oírse sobre patines hasta 1790, cuando un herrero parisino inventó un patín sobre ruedas llamado "patín-a-terre". Sin embargo, tomó unos 25 años para que este patín ganara reconocimiento. En Berlín, en 1818, patines sobre ruedas fueron usados por primera vez en el estreno del ballet "Der Maler oder die Wintervergnügungen" ("El artista o Placeres invernales"). El ballet había sido creado para patines sobre hielo, pero como no era posible producir hielo en el escenario, se utilizaron patines de ruedas.
+<p>En 1876 en París se abre el primer centro de patinaje como deporte de moda y montado con todo tipo de lujos para la aristocracia de esta ciudad los cuales; tomaron este deporte de moda. Desde ese momento proliferaron las pistas de patinaje por toda Europa. Alemania contaba con 50 de estas, Gran Bretaña con 30 y en Estados Unidos en ese momento empezaba su expansión. Con este auge se vio la necesidad de crear clubes de patinaje y organizar competiciones entre estos mismos. Edward Crawford llevo a Europa el Hockey sobre patines deporte que se practicaba en ese momento en la ciudad de Chicago.
+En 1905 se funda en Inglaterra la AMATEUR HOCKEY ASSOCIATION, entidad que es la precursora del patinaje en todos los niveles, aunque en 1901 ya existían equipos que competian entre si pero sin reglas de juego. Las primeras noticias de partidos celebrados entre clubes de diferentes países datan de 1910. Con esto, podemos afirmar que Inglaterra es la cuna del Hockey y en el año de 1909 se comenzo a jugar este deporte en el condado de Kent.
+</p>
+<p>
+En 1924 se reunen en Montreux (Suiza) representantes de francia, Alemania, Gran Bretaña y Suiza, fundando la FEDERATION INTERNATIONAL DU PATINAGE A ROULOTTE (FIPR), siendo nombrado como presidente el Suizo Fred Renkewitz, el cual se encargo de difundir el Hockey a nivel mundial.
+En el año de 1946 se crea la Federación Española de Hockey y Patinaje y España debuta en competencias internacionales en 1947 en un campeonato realizado en Lisboa (Portugal)
+En los últimos 17 años el deporte del patinaje a nivel mundial se ha ido incrementando al igual que los países que participan dentro de este evento en los diferentes campeonatos de velocidad:
+Samuel Winslow, se involucró con el patinaje sobre ruedas cuando fue contratado por James Leonard Plimpton para fabricar los patines que éste había inventado. En la década de 1870, Winslow comenzó a fabricar sus propios modelos de patines y fue demandado por Plimpton por usurpación de patentes. Ambos acordaron continuar con la fabricación de patines.
+</p>
+			</div>
+				
+	     </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Productos</h4>
+							<li><a href="#">Hombres</a></li>
+							<li><a href="#">Mujeres</a></li>
+							<li><a href="#">Niñ@s</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Acerca de</h4>
+							<li><a href="#">Nuestra tienda</a></li>
+							<li><a href="#">Soporte</a></li>
+							<li><a href="#">Equipo</a></li>
+							</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Soporte Cliente</h4>
+							<li><a href="#">Contacto</a></li>
+							<li><a href="#">313-699-0237</a></li>
+							<li><a href="#">Ubicacion</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Boletin Informativo</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    
+					  
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
